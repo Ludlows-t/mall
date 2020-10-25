@@ -1,16 +1,22 @@
 <template>
   <div>
-    <h2>这是cart</h2>
-
+     <nav-bar class="home-nav"><div slot="center">购物车</div></nav-bar>
   </div>
 </template>
 
 <script>
+import NavBar from 'components/common/navbar/NavBar'
   export default {
-    name: "Cart"
+    name: "Cart",
+    components: {
+      NavBar
+    }
   }
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+.home-nav{
+  background-color: var(--color-tint);
+  color: #ffffff;
+}
 </style>
